@@ -1,73 +1,19 @@
-# Pets-Brawl-game
-[heading-1](#heading-1 "Goto heading-1")
+# Pets Brawl game
 
-h
-h
-h
-h
-h
-h
-h
-h
-h
-h
-h
-hh
-h
-h
-h
-h
-h
-h
-h
-h
-h
-h
-h
-h
-hh
-h
-h
-h
-h
-h
-h
-h
-h
-h
-h
-h
-h
-hh
-h
-jjj
-j
-j
-j
-j
-j
-j
-j
-## heading-1
-j
-j
-j
-jj
-h
-h
-h
-h
-h
-h
-h
-h
-h
-h
-h
-hh
-h
-jj
-j
-j
-j
-j
+Simple game written in pygame.Purpose of the game is to fight with yours pets against monsters, improve them, take care of them and buy new ones.
+
+Game can be divided into these parts:
+
+-[Fights](#fights "Goto Fights")
+
+-[Pets](#pets "Goto Pets")
+
+-[Mines](#mines "Goto Mines")
+
+-[Shop](#shop "Goto Shop")
+
+-[Mission](#mission "Goto Mission")
+
+-[Beds](#beds "Goto Beds")
+
+# Fights
