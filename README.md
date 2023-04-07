@@ -16,4 +16,5 @@ Game can be divided into these parts:
 
 -[Beds](#beds "Goto Beds")
 
-# Fights
+## Fights
+You can choose one out of three fight modes (1v1 - one pet vs one monster, Fight until die - one pet fight against multiple monsters until pet die, Boss fight - 4 pets vs Boss 
