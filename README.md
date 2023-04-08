@@ -19,4 +19,9 @@ Game can be divided into these parts:
 ## Fights
 You can choose one out of three fight modes (1v1 - one pet vs one monster, Fight until die - one pet fight against multiple monsters until pet die, Boss fight - 4 pets vs Boss. By 'a', 's', 'r' buttons you can fight, use super attack or heal respectively.
 
-1. 1v1 - 
+1. 1v1 - You choose one pet which will fight against monster. Pet has pre-loaded stats (HP, atack range, heal range, super attack) but monster stats are calculated based
+on your pet. Formulas are:
+    - Monster HP = randint(Pet_HP * 1.85, Pet_HP * 2.45)
+    - Monster Attack = randint(Pet_HP / (Monster_HP / Pet_attack_MIN) * 1.2, Pet_HP / (Monster_HP / Pet_attack_MAX) * 1.2)
+    Note that pet attack and heal depends on how much their are hungry and sleepy, formula for their attack is here:
+    - Pet_attack = randint(Pet_attack_MIN * sqrt(Pet_sleep *.01 * Pet_food *.01), Pet_attack_MAX * sqrt(Pet_sleep *.01 * Pet_food *.01) 
