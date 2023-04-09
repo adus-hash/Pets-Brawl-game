@@ -41,3 +41,30 @@ on your pet. Formulas are:
     - Boss_HP = randint(sum * 2.05, sum * 2.7)
     - Boss_attack = randint(Pet_HP * Pet_attack_MIN * 4 / Boss_HP, Pet_HP * Pet_attack_MAX * 4 / Boss_HP)
     - Won_coins = randint(100, 200)
+
+## Pets
+
+Pet is a python class and has this constructor parametres (img, health, damage1, damage2, reg1, reg2, name, druh, utok, druh_coin, super_pow)
+
+-img - image of pet
+
+-damage1 - damage_MIN
+
+-damage2 - damage_MAX
+
+-reg1 - heal_MIN
+
+-reg2 - heal_MAX
+
+-druh - type of Pet (light, fire, ground)
+
+-utok - array of images for attack animation
+
+-druh_coin - array of images for coin animation
+
+-super_pow - array of images for super attack animation
+
+Note that Pet class has more object variables which some of then i will explain later.
+
+Firstly let's say what you can do with pets:
+1. You can feed then
