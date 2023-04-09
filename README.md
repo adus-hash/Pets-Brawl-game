@@ -28,3 +28,4 @@ on your pet. Formulas are:
     - Pet_attack = randint(Pet_attack_MIN * sqrt(Pet_sleep *.01 * Pet_food *.01), Pet_attack_MAX * sqrt(Pet_sleep *.01 * Pet_food *.01)
     - Pet_heal = randint(Pet_heal_MIN * sqrt(Pet_sleep *.01 * Pet_food *.01), Pet_heal_MAX * sqrt(Pet_sleep *.01 * Pet_food *.01)
     
+    After fight you can win between 40-90 coins or lose 5-10 and gain score between 10-20 or 5-9 respectively.
