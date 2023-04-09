@@ -36,6 +36,8 @@ on your pet. Formulas are:
     - Won_coins = randint(14, 20) * killed_monsters
 
 3. Boss fight - You will choose 4 pets and you will fight against boss. Stats for boss are calculated here:
+    
     sum = Pet1_HP + Pet2_HP + Pet3_HP + Pet4_HP
     - Boss_HP = randint(sum * 2.05, sum * 2.7)
     - Boss_attack = randint(Pet_HP * Pet_attack_MIN * 4 / Boss_HP, Pet_HP * Pet_attack_MAX * 4 / Boss_HP)
+    - Won_coins = randint(100, 200)
