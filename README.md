@@ -14,7 +14,6 @@ Game can be divided into these parts:
 
 -[Mission](#mission "Goto Mission")
 
--[Beds](#beds "Goto Beds")
 
 ## Fights
 You can choose one out of three fight modes (1v1 - one pet vs one monster, Fight until die - one pet fight against multiple monsters until pet die, Boss fight - 4 pets vs Boss. By 'a', 's', 'r' buttons you can fight, use super attack or heal respectively.
@@ -94,3 +93,5 @@ Firstly, let's say what you can do with pets:
     -Price - 20-50% lower price for uprading pet
     
     -Upgrade - 6-14% more pet upgrade for the same price
+
+## Mines
