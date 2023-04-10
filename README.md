@@ -64,10 +64,33 @@ Pet is a python class and has this constructor parametres (img, health, damage1,
 
 -super_pow - array of images for super attack animation
 
-Note that Pet class has more object variables which some of then i will explain later.
-
 Firstly, let's say what you can do with pets:
 1. You can feed then - Pets in order to be stronger in fights, they must have food indicator at the highest possible percentage. If you feed the pet with fruit of same type as pet (cherry - fire pet, banana - light pet, pear - ground pet), it will add them more food points than different types. Formulas: 
     - add_food = randint(28, 35) # Pet type = Fruit type
     - add_food = randint(17, 23) # Pet type != Fruit Type
-2. Put them to bed - Pets in order to be stronger in fights, they must have sleep indicator at the highest possible percentage
+    
+2. Put them to bed - Pets in order to be stronger in fights, they must have sleep indicator at the highest possible percentage. If sleep percentage drops below 75 then you can put pet to bed. Roughly each second will add one percent. After they reach 90% you can pick them out of bed or wait to reach 100% and be stronger.
+
+3. Level up your pets - Level up will increase pets HP, damage and heal by 7%, price for next level up
+
+    -Price_for_upgrade - sqrt(Pet_HP) * 2 + (Pet_attack_MIN + Pet_attack_MAX) / 2.88
+
+4. Use elixirs on pets - If pet drink elixir, then pet gain some additionall abillities. List of all elixirs and their effects:
+
+    -Heal - increase healing 12-25%
+    
+    -HP - increase HP 12-17%
+    
+    -Damage - increase damage 12-22%
+    
+    -Sleep - Less sleepy after fight about 62-84%
+    
+    -Hunger - Less hungry after fight about 51-75%
+    
+    -Coins - 14-25% more coins if you win a fight
+    
+    -Resistance - 25-30% more durable in fights
+    
+    -Price - 20-50% lower price for uprading pet
+    
+    -Upgrade - 6-14% more pet upgrade for the same price
