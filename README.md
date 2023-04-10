@@ -68,4 +68,4 @@ Note that Pet class has more object variables which some of then i will explain 
 
 Firstly, let's say what you can do with pets:
 1. You can feed then - Pets in order to be stronger in fights, they must have food indicator at the highest possible percentage
-    - 
+    - If you feed the pet with fruit of same type as pet (cherry - fire pet, banana - light pet, pear - ground pet)  
