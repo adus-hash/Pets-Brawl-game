@@ -1520,7 +1520,7 @@ class Game(Pet, Coin):
                                     self.pets_v_posteli[1].sleep = self.pets_v_posteli[1].sleep + int((datetime.now() - self.pets_v_posteli[1].cas_od_kedy_spi).total_seconds() * self.zlomok_pre_spanok) if self.pets_v_posteli[1].sleep + int((datetime.now() - self.pets_v_posteli[1].cas_od_kedy_spi).total_seconds() * self.zlomok_pre_spanok) <= 99 else 100
                                     self.pets_v_posteli[1] = None
 
-                                if self.pets_v_posteli[2] != None and int(self.pets_v_posteli[2].get_sleep()) + int((datetime.now() - self.pets_v_posteli[2].cas_od_kedy_spi).total_seconds() * self.zlomok_pre_spanok) >= 80 and self.pos_pelech[2][0] + 9 <= mouse[0] <= self.pos_pelech[2][0] + 111 and self.pos_pelech[2][1] - 58 <= mouse[1] <= self.pos_pelech[2][1] - 35:
+                                if self.pets_v_posteli[2] != None and int(self.pets_v_posteli[2].get_sleep()) + int((datetime.now() - self.pets_v_posteli[2].cas_od_kedy_spi).total_seconds() * self.zlomok_pre_spanok) >= 90 and self.pos_pelech[2][0] + 9 <= mouse[0] <= self.pos_pelech[2][0] + 111 and self.pos_pelech[2][1] - 58 <= mouse[1] <= self.pos_pelech[2][1] - 35:
                                     self.pets_v_posteli[2].sleep = self.pets_v_posteli[2].sleep + int((datetime.now() - self.pets_v_posteli[2].cas_od_kedy_spi).total_seconds() * self.zlomok_pre_spanok) if self.pets_v_posteli[2].sleep + int((datetime.now() - self.pets_v_posteli[2].cas_od_kedy_spi).total_seconds() * self.zlomok_pre_spanok) <= 99 else 100
                                     self.pets_v_posteli[2] = None
 
