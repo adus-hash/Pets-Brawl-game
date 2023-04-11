@@ -43,65 +43,77 @@ on your pet. Formulas are:
 
 Pet is a python class and has this constructor parametres (img, health, damage1, damage2, reg1, reg2, name, druh, utok, druh_coin, super_pow)
 
--img - image of pet
+- img - image of pet
 
--damage1 - damage_MIN
+- damage1 - damage_MIN
 
--damage2 - damage_MAX
+- damage2 - damage_MAX
 
--reg1 - heal_MIN
+- reg1 - heal_MIN
 
--reg2 - heal_MAX
+- reg2 - heal_MAX
 
--druh - type of Pet (light, fire, ground)
+- druh - type of Pet (light, fire, ground)
 
--utok - array of images for attack animation
+- utok - array of images for attack animation
 
--druh_coin - array of images for coin animation
+- druh_coin - array of images for coin animation
 
--super_pow - array of images for super attack animation
+- super_pow - array of images for super attack animation
 
 Firstly, let's say what you can do with pets:
 1. You can feed then - Pets in order to be stronger in fights, they must have food indicator at the highest possible percentage. If you feed the pet with fruit of same type as pet (cherry - fire pet, banana - light pet, pear - ground pet), it will add them more food points than different types. Formulas: 
-    - add_food = randint(28, 35) # Pet type = Fruit type
+    - add_food = randint(28, 35) # Pet type == Fruit type
     - add_food = randint(17, 23) # Pet type != Fruit Type
     
 2. Put them to bed - Pets in order to be stronger in fights, they must have sleep indicator at the highest possible percentage. If sleep percentage drops below 75 then you can put pet to bed. Roughly each second will add one percent. After they reach 90% you can pick them out of bed or wait to reach 100% and be stronger.
 
 3. Level up your pets - Level up will increase pets HP, damage and heal by 7%, price for next level up
 
-    -Price_for_upgrade - sqrt(Pet_HP) * 2 + (Pet_attack_MIN + Pet_attack_MAX) / 2.88
+    - Price_for_upgrade - sqrt(Pet_HP) * 2 + (Pet_attack_MIN + Pet_attack_MAX) / 2.88
 
 4. Use elixirs on pets - If pet drink elixir, then pet gain some additionall abillities, their effect is for two cycles. List of all elixirs and their effects:
 
-    -Heal - increase healing 12-25%
+    - Heal - increase healing 12-25%
     
-    -HP - increase HP 12-17%
+    - HP - increase HP 12-17%
     
-    -Damage - increase damage 12-22%
+    - Damage - increase damage 12-22%
     
-    -Sleep - Less sleepy after fight about 62-84%
+    - Sleep - Less sleepy after fight about 62-84%
     
-    -Hunger - Less hungry after fight about 51-75%
+    - Hunger - Less hungry after fight about 51-75%
     
-    -Coins - 14-25% more coins if you win a fight
+    - Coins - 14-25% more coins if you win a fight
     
-    -Resistance - 25-30% more durable in fights
+    - Resistance - 25-30% more durable in fights
     
-    -Price - 20-50% lower price for uprading pet
+    - Price - 20-50% lower price for uprading pet
     
-    -Upgrade - 6-14% more pet upgrade for the same price
+    - Upgrade - 6-14% more pet upgrade for the same price
 
 ## Coins
 There are four types of coins, one as a main currency and three secondary. Main currency can be obtained only in fights and can be used to upgrade mines storage, buy new pets or buy elixirs/food. Each pet type has it's own coin type (secondary currency), which can be mined and then used to upgrade pets or upgrade mines. There are three mines for three secondary currencies, they mine certain ammount of coins per hour after that this is stored in storage and then you can collect those coins from storage. Formulas:
 
-    -coins_per_hour *= 1.13 # upgrade mines
+    - coins_per_hour *= 1.13 # upgrade mines
 
-    -storage *= 1.21        # upgrade storage
+    - storage *= 1.21        # upgrade storage
     
-    -elixir_price = 5
+    - elixir_price = 5
     
-    -pet_price = Pet_HP * 3
+    - pet_price = Pet_HP * 3
 
-## Missions
-After you complete a mission your 
+## Mission
+After you complete a mission your reward will be exclusive pet, there are 6 missions listed here:
+
+    - kill 25 monsters (reward - Light Pet)
+    
+    - kill 50 monsters (reward - Light Pet)
+    
+    - kill 10 bosses (reward - Fire Pet)
+    
+    - kill 30 bosses (reward - Fire Pet)
+    
+    - win 60 times (reward - Ground Pet)
+    
+    - score 500 (reward - Ground Pet)
