@@ -8,7 +8,7 @@ Game can be divided into these parts:
 
 -[Pets](#pets "Goto Pets")
 
--[Mines](#mines "Goto Mines")
+-[Coins](#coins "Goto Coins")
 
 -[Shop](#shop "Goto Shop")
 
@@ -94,4 +94,13 @@ Firstly, let's say what you can do with pets:
     
     -Upgrade - 6-14% more pet upgrade for the same price
 
-## Mines
+## Coins
+There are four types of coins, one as a main currency and three secondary. Main currency can be obtained only in fights and can be used to upgrade mines storage, buy new pets or buy elixirs/food. Each pet type has it's own coin type (secondary currency), which can be mined and then used to upgrade pets or upgrade mines. There are three mines for three secondary currencies, they mine certain ammount of coins per hour after that this is stored in storage and then you can collect those coins from storage. Formulas:
+
+    -coins_per_hour *= 1.13 # upgrade mines
+
+    -storage *= 1.21        # upgrade storage
+    
+    -elixir_price = 5
+    
+    -pet_price = Pet_HP * 3
