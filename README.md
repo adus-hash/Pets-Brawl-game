@@ -1,6 +1,6 @@
 # Pets Brawl game
 
-Simple game written in pygame.Purpose of the game is to fight with yours pets against monsters, improve them, take care of them and buy new ones.
+Simple game written in pygame. Purpose of the game is to fight with yours pets against monsters, improve them, take care of them, buy new ones and complete achievements.
 
 Game can be divided into these parts:
 
@@ -9,8 +9,6 @@ Game can be divided into these parts:
 -[Pets](#pets "Goto Pets")
 
 -[Coins](#coins "Goto Coins")
-
--[Shop](#shop "Goto Shop")
 
 -[Mission](#mission "Goto Mission")
 
@@ -74,7 +72,7 @@ Firstly, let's say what you can do with pets:
 
     -Price_for_upgrade - sqrt(Pet_HP) * 2 + (Pet_attack_MIN + Pet_attack_MAX) / 2.88
 
-4. Use elixirs on pets - If pet drink elixir, then pet gain some additionall abillities. List of all elixirs and their effects:
+4. Use elixirs on pets - If pet drink elixir, then pet gain some additionall abillities, their effect is for two cycles. List of all elixirs and their effects:
 
     -Heal - increase healing 12-25%
     
@@ -104,3 +102,6 @@ There are four types of coins, one as a main currency and three secondary. Main 
     -elixir_price = 5
     
     -pet_price = Pet_HP * 3
+
+## Missions
+After you complete a mission your 
